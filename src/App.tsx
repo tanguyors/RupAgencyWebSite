@@ -9,7 +9,9 @@ import ServicesSection from './components/ServicesSection';
 import ServicesPage from './components/Services';
 import Contact from './components/Contact';
 import Stats from './components/Stats';
+import AboutSection from './components/AboutSection';
 import About from './components/About';
+import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
@@ -56,6 +58,7 @@ const App: React.FC = () => {
                 <Stats />
                 <Intro />
                 <Mission />
+                <AboutSection />
                 <ServicesSection />
               </main>
               <Footer />
@@ -63,8 +66,9 @@ const App: React.FC = () => {
           }
         />
                     <Route path="/a-propos" element={<About />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );
