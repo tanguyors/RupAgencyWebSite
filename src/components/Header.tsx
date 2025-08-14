@@ -17,10 +17,10 @@ const Header: React.FC = () => {
 
   const navItems = [
     { name: 'Accueil', to: '/' },
-    { name: 'Services', to: '/#services' },
+    { name: 'Services', to: '/services' },
     { name: 'Portfolio', to: '/#portfolio' },
     { name: 'À propos', to: '/a-propos' },
-    { name: 'Contact', to: '/#contact' },
+    { name: 'Contact', to: '/contact' },
   ];
 
   return (
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Link
-              to="/#contact"
+              to="/contact"
               className="btn-primary"
             >
               Réserver un appel
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
               ))}
               <div className="px-3 py-2">
                 <Link
-                  to="/#contact"
+                  to="/contact"
                   className="btn-primary w-full text-center block"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

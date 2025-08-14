@@ -5,7 +5,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
 import Mission from './components/Mission';
-import Services from './components/Services';
+import ServicesSection from './components/ServicesSection';
+import ServicesPage from './components/Services';
+import Contact from './components/Contact';
 import Stats from './components/Stats';
 import About from './components/About';
 import Footer from './components/Footer';
@@ -43,27 +45,27 @@ const App: React.FC = () => {
         <link rel="canonical" href="https://rupagency.com" />
       </Helmet>
 
-      <div className="min-h-screen">
-        <Header />
-        <main>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <Stats />
-                  <Intro />
-                  <Mission />
-                  <Services />
-                </>
-              }
-            />
-            <Route path="/a-propos" element={<About />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="min-h-screen">
+              <Header />
+              <main>
+                <Hero />
+                <Stats />
+                <Intro />
+                <Mission />
+                <ServicesSection />
+              </main>
+              <Footer />
+            </div>
+          }
+        />
+                    <Route path="/a-propos" element={<About />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/contact" element={<Contact />} />
+      </Routes>
     </>
   );
 };
