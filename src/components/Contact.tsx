@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FiMail, FiPhone, FiMapPin, FiClock, FiMessageCircle, FiSend, FiCheck } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiClock, FiSend, FiCheck } from 'react-icons/fi';
 import Header from './Header';
 import Footer from './Footer';
 
