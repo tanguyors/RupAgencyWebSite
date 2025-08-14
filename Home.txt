@@ -1,0 +1,110 @@
+RÔLE
+Tu es un développeur Frontend expert.  
+Objectif : coder la **page d’accueil complète** du site RupAgency en React 18 + TypeScript + TailwindCSS, basée sur les visuels fournis.  
+La page doit être responsive, performante, fidèle au design, et prête à être déployée sur Railway.
+
+STACK & CONFIG
+- React : ^18.3.1
+- React DOM : ^18.3.1
+- react-scripts : ^5.0.1
+- TypeScript : ^4.9.5
+- @types/react : ^18.3.23
+- @types/react-dom : ^18.3.7
+- TypeScript config : Target ES5, Module ESNext, JSX react-jsx, Strict true
+- Styling : TailwindCSS (postcss/autoprefixer inclus)
+- SEO : react-helmet-async
+- Images : dossier `/public/rup/` avec noms de fichiers donnés ci-dessous
+- Navigation fluide (scroll, hover states, focus visible)
+
+SECTIONS À CODER
+
+### 1. HEADER
+- Fond sombre transparent qui devient opaque au scroll
+- Logo texte “RupAgency” (gradient violet→cyan)
+- Menu : Accueil, Services, Portfolio, À propos, Contact
+- Bouton “Réserver un appel” (violet, hover plus clair)
+
+### 2. HERO
+- Fond sombre (#0b0b12) avec petites particules animées
+- H1 : “On propulse votre” (blanc) + “marque” (gradient violet→cyan)
+- Paragraphe :  
+  "De l'idée à la réussite. Agence créative & digitale à Bali — Web, Automatisation & IA, Photo pro, Réseaux sociaux."
+- CTA :  
+  - Bouton plein violet “Voir nos réalisations” → /portfolio  
+  - Bouton outline “Réserver un appel” → /contact
+- Illustration laptop à droite : `/public/rup/hero-laptop.png`
+- Responsive : mobile = pile verticale, desktop = 2 colonnes
+
+### 3. SECTION INTRO ("L'Excellence Digitale")
+- Petit texte au-dessus : "BASÉ À BALI, IMPACT MONDIAL" (violet)
+- Gros titre : “RupAgency L'Excellence Digitale” (mélange violet/blanc)
+- Paragraphe explicatif :  
+  "Depuis Bali, nous accompagnons les entreprises européennes et asiatiques dans leur transformation digitale avec une approche premium, créative et orientée résultats mesurables."
+- Bloc chiffres à droite :
+  - 5+ Années d’expertise
+  - 100+ Projets livrés
+  - 25+ Pays couverts
+  - 24/7 Support premium
+
+### 4. SECTION "Notre Mission"
+- Titre : "Notre Mission"
+- Paragraphe :  
+  "Transformer les idées en réalités digitales performantes. Nous croyons que chaque entreprise mérite une présence digitale qui reflète son excellence et génère des résultats concrets."
+- 3 icônes avec titres + sous-titres :  
+  - Innovation — Technologies de pointe  
+  - Performance — Résultats mesurables  
+  - Proximité — Accompagnement dédié
+- Bouton : “Découvrir notre équipe” → /a-propos
+
+### 5. SECTION SERVICES
+- 6 cartes (3 colonnes desktop, 1 colonne mobile) :  
+  1. Stratégie & Conseil Digital  
+  2. Création Web & Applications  
+  3. Branding & Identité Visuelle  
+  4. Marketing & Réseaux Sociaux  
+  5. Formations & IA  
+  6. (Optionnelle selon visuel)
+- Chaque carte :  
+  - Icône violet  
+  - Titre  
+  - Description courte  
+  - Liste de 4 points  
+  - Bouton “En savoir plus” (violet)
+
+### 6. SECTION CHIFFRES CLÉS
+- 3 cartes horizontales avec fond sombre + halo violet :
+  - 100+ Projets réalisés
+  - 230% d’augmentation de trafic
+  - 95% Fidélisation client
+
+### 7. FOOTER (simple)
+- Logo “RupAgency”
+- Menu secondaire
+- Mention légale & copyright
+
+SEO
+- `<title>` : "Agence créative & IA à Bali | RupAgency"
+- `<meta name="description">` : "De l’idée à la réussite : sites web, automatisation & IA, photo pro, réseaux sociaux."
+- OG image : `/public/rup/og-home.png`
+
+ASSETS
+- `/public/rup/hero-laptop.png`
+- `/public/rup/amaury.jpg`
+- `/public/rup/tanguy.jpg`
+- `/public/rup/og-home.png`
+- Icônes en SVG (utiliser react-icons ou Heroicons)
+
+ACCEPTANCE CRITERIA
+- Pixel-perfect vs maquettes
+- Mobile-first
+- Lighthouse ≥ 90 sur Perf, SEO, A11y
+- Code clair et structuré :
+  - `src/components/Header.tsx`
+  - `src/components/Hero.tsx`
+  - `src/components/Intro.tsx`
+  - `src/components/Mission.tsx`
+  - `src/components/Services.tsx`
+  - `src/components/Stats.tsx`
+  - `src/components/Footer.tsx`
+  - `src/App.tsx`
+- Aucun contenu lorem, textes exacts fournis ci-dessus
